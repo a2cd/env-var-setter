@@ -1,5 +1,5 @@
 [package]
-name = "env-var-setter"
+name = "src-tauri"
 version = "0.0.1-20240216"
 description = "Env Var Setter"
 authors = ["a2cd"]
