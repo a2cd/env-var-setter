@@ -6,7 +6,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "env-var-setter",
+    "productName": "Env Var Setter",
     "version": "0.0.1-20240216"
   },
   "tauri": {
@@ -21,7 +21,7 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "EnvVarSetter",
+        "title": "Env Var Setter",
         "width": 800,
         "height": 600
       }
