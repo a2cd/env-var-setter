@@ -1,6 +1,15 @@
+<template>
+  <div>
+    所有环境变量按字母排序：
+    <a-space direction="vertical" fill>
+      <a-tag v-for="(item, idx) in vars" :key="idx" style="text-align: left;">{{item.k}}={{item.v}}</a-tag>
+    </a-space>
+  </div>
+</template>
+
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
-import { invoke } from "@tauri-apps/api/tauri";
+import { onMounted, ref } from "vue"
+import { invoke } from "@tauri-apps/api/tauri"
 
 class KvPair {
   k: string;
@@ -33,14 +42,5 @@ async function listVars() {
 
 onMounted(()=>{
   listVars()
-}) 
+})
 </script>
-
-<template>
-  <div>
-    所有环境变量按字母排序：
-    <div v-for="(item, idx) in vars" :key="idx" style="text-align: left;">
-      {{item.k}}={{item.v}}
-    </div>
-  </div>
-</template>
