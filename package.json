@@ -4,7 +4,7 @@
   "version": "0.0.1-20240216",
   "type": "module",
   "scripts": {
-    "dev": "vite --config ./config/vite.config.dev.ts",
+    "dev": "vite --config ./config/vite.config.dev.ts --host 0.0.0.0",
     "build": "vue-tsc --noEmit && vite build --config config/vite.config.prd.ts",
     "preview": "vite preview",
     "tauri-dev": "tauri dev",
@@ -14,7 +14,7 @@
     "@arco-design/web-vue": "^2.55.3",
     "@tauri-apps/api": "^1.5.2",
     "@vueuse/core": "^9.3.0",
-    "vue": "^3.3.4",
+    "vue": "^3.2.40",
     "vue-i18n": "^9.2.2",
     "vue-router": "^4.0.14",
     "vue-echarts": "^6.2.3",

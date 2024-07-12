@@ -33,7 +33,7 @@ importers:
         specifier: ^6.0.2
         version: 6.0.2
       vue:
-        specifier: ^3.3.4
+        specifier: ^3.2.40
         version: 3.4.31(typescript@5.5.3)
       vue-echarts:
         specifier: ^6.2.3
